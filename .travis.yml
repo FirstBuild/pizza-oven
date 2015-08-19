@@ -1,0 +1,15 @@
+language: cpp
+sudo: false
+
+compiler:
+  - gcc
+
+before_script:
+  - export PATH=$HOME/.local/bin:$PATH
+  - pip install cpp-coveralls --user `whoami`
+
+script:
+  - make
+
+after_success:
+  - make coveralls

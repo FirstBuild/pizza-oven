@@ -1,0 +1,10 @@
+# Code coverage files
+*.gcov
+*.gcda
+*.gcno
+
+# Object files
+*.o
+
+# Binaries
+test
